@@ -1,0 +1,25 @@
+def reflex_agent():
+    l=input("Enter the location\n")
+    c=int(input("Enter 1 if "+l+" is dirty and enter 0 if "+l+" is clean\n"))
+    if(c==1):
+        print("Action: Suck the dirt at location "+l)
+    else:
+        if(l=='A'):
+            print("Action: Move to the right")
+        else:
+            print("Action: Move to the left")
+
+print('_____     _____')
+print('|             |     |              |')
+print('| Location A  |     | Location B   |')
+print('|             |     |              |')
+print('|____|     |_____|')
+print()
+
+while(1):
+    reflex_agent()
+    i=int(input("Enter -1 to stop, else any other number\n"))
+    if(i==-1):
+        break
+    else:
+        continue
